@@ -1,0 +1,20 @@
+.card-bg-color {
+  background-color: #F2EDE7 !important;
+  border: none !important;
+}
+
+.nav-pills {
+  .nav-link {
+    @include border-radius($nav-pills-border-radius);
+    background-color: #D1BAA1 !important;
+    color: #604933;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: white;
+    font-weight: 800!important;
+    background-color: #F25725!important;
+  }
+}

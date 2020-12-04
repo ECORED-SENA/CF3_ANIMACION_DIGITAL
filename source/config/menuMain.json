@@ -1,0 +1,70 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  {
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "definicion_tipologias",
+    "title": "1. Definición y tipologías",    
+    "path": "pages/tema-1.html"    
+  },
+  {
+    "id": 2,
+    "icon": "fa fa-file-text",
+    "slug": "ritmo_montaje",
+    "title": "2. Ritmo y montaje",    
+    "path": "pages/tema-2.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "ritmo_montaje",
+        "title": "2.1 Clasificación o métodos de montaje",
+        "anchor": "tema2_1"
+      }
+    ]     
+  },
+  {
+    "id": 3,
+    "icon": "fa fa-file-text",
+    "slug": "maqueta_sonido",
+    "title": "3. Maqueta de sonido",    
+    "path": "pages/tema-3.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "maqueta_sonido",
+        "title": "3.1 Diálogos",
+        "anchor": "tema3_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "maqueta_sonido",
+        "title": "3.2 Efectos",
+        "anchor": "tema3_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "maqueta_sonido",
+        "title": "3.3 Foley",
+        "anchor": "tema3_3"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "maqueta_sonido",
+        "title": "3.4 Música",
+        "anchor": "tema3_4"
+      }
+    ]   
+  },
+  {
+    "id": 4,
+    "icon": "fa fa-file-text",
+    "slug": "proceso_animatic",
+    "title": "4. Proceso básico de animatic",    
+    "path": "pages/tema-4.html"    
+  }  
+]

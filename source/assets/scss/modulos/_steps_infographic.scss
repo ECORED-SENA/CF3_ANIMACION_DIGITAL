@@ -1,0 +1,95 @@
+$steps-header-color: #d4e5f1;
+$steps-card-color: #EEF0F2;
+
+.stc_color_02 {
+  background-color: #d1e4ec !important;
+}
+.stc_color_03 {
+  background-color: #d2dbe9 !important;
+}
+.stc_color_04 {
+  background-color: #d2d4e6 !important;
+}
+.stc_color_05 {
+  background-color: #e1dbe9 !important;
+}
+
+.steps {
+  position: relative;  
+  padding-top: 2rem; 
+  &:before {
+    content: "";
+    position: absolute;        
+    left: 0.5rem;
+    top: -2rem;
+    width: 5px;
+    height: 100%;   
+    background-color: #EDF2F9;
+  }
+  &__header {
+    position: relative;
+    padding: 1rem;
+    margin-left: 2rem;    
+    display: flex !important;
+    justify-content: start;
+    align-items: center;    
+    &__number {
+      position: absolute;
+      left: 15px;
+      z-index: 2;
+      h3{
+        color: orange;
+        font-size: 15pt;
+        margin-bottom: 0 !important;
+        font-weight: 800;
+      }
+    }
+    &__icon {
+      position: absolute;
+      left: -2rem;
+      width: 90px;
+      img {
+        width: 90px;
+      }
+    }
+    &__title {
+      padding: 1rem 2rem 1rem 0;
+      border-radius: 999px;
+      background-color: $steps-header-color;
+      h3 {
+        margin-left: 3.5rem;
+        margin-bottom: 0 !important;
+      }      
+    }
+  } 
+  &__copy {
+    padding: 1.5rem;
+    margin-left: 3.5rem;
+    margin-bottom: 2rem;
+    background-color: $steps-card-color;
+    border-radius: 12px;
+    p {
+      margin-bottom: 0 !important;
+    }
+  } 
+}
+
+.img_texture {
+  background: url(../images/pages/tema_4/grid.png);  
+  background-repeat: repeat;   
+}
+.bg-custom{
+  background-color: #eef0f1;
+}
+
+// carrousel
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 60px;
+    width: 60px;
+    outline: black;
+    background-color: rgba(0,0,0,0.15);
+    background-size: 50%, 50%;
+    border-radius: 50%;    
+}
+
+
