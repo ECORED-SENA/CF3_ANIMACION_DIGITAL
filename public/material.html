@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Historia, corto análogo e investigación</title>
+        <meta meta name="description" content="Equipo de Ecosistema de recursos educativos SENA encargado del desarrollo y rediseño de cursos virtuales de aprendizaje para el SENA.">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#ResultadosAprendizaje"><span class="text-white">Resultados de aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#IndiceTematico"><span class="text-white">Contenidos</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#Creditos"><span class="text-white">Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Tecnólogo en animación digital </h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Animatic </h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">El desarrollo audiovisual es un proceso estructurado que requiere planeación cuidadosa para lograr que la idea que se desea comunicar llegue adecuadamente al espectador, de ahí la importancia en conocer y apropiar conceptos esenciales de lenguaje audiovisual que potencien la narración de la historia y permitan desarrollar apropiadamente una propuesta gráfica mediante la creación de un storyboard, para así determinar si el planteamiento original se logra traducir adecuadamente a imágenes y por tanto, mantiene la esencia del mensaje.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <h5><strong>Cod. 250201021-1</strong></h5>
+                        <p class="mb-0">Analizar el storyboard de acuerdo con los parámetros del guión técnico.</p>
+                        <hr>
+                        <h5><strong>Cod. 250201021-2</strong></h5>
+                        <p class="mb-0">Establecer tiempos a los planos del storyboard según el guión técnico.</p>
+                        <hr>
+                        <h5><strong>Cod. 250201021-3</strong></h5>
+                        <p class="mb-0">Realizar el animatic según el lenguaje audiovisual establecido en el guión técnico.</p>
+                        <hr>
+                        <h5><strong>Cod. 250201021-4</strong></h5>
+                        <p class="mb-0">Verificar el animatic según el storyboard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-1">Definición y tipologías</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-1">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-2">Ritmo y montaje</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-2">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-3">Maqueta de sonido</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-3">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">4</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-4">Proceso básico de animatic</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-4">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-sort-alpha-asc"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#glosario">Glosario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#glosario">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-folder-open"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#anexos">Material complementario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#anexos">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-book"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#referencias">Referencias bibliográficas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#referencias">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="tema-1">
+                <div class="container" id="tema_1">
+                    <div class="header-ecored">
+                        <h1>1. Definición y tipologías</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_01.jpg" alt=""></div>
+                            <div class="col-12">
+                                <p>También conocido como <i>story reel</i>, el <i>animatic</i> o animática en español, es una composición audiovisual, donde se acoplan y sincronizan todas las secuencias de viñetas del <i>storyboard</i> con la maqueta de sonido. Es la mejor forma de experimentar con el ritmo narrativo y ver cómo quedará el proyecto al final antes de entrar a la etapa de pre-producción. Todas las transiciones entre escenas son mostradas y cada dibujo se monta con cierta duración en el tiempo.</p>
+                                <p class="mb-0">Todo lo anterior permite a los directores y editores corregir la narrativa, sugerir nuevos planos y lograr una duración apropiada (Doucet, 2020). Como lo menciona el Centro Audiovisual de Rosario – CAR (Argentina): “Siempre tengamos presente que en animación el trabajo de guión es más activo y abarcativo que en otros géneros. El guión de animación siempre se puede complementar con el dibujo y puede atravesar las distintas etapas de rodaje con mayor libertad para su reescritura que en las ficciones convencionales, permitiendo distintos aportes que enriquecerán nuestra escritura”.</p>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list mb-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Tipologías</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_02.jpg" alt=""></div>
+                            <div class="col-12">
+                                <p>El <i>animatic</i> puede ser tan simple como un video editado de cada uno de los cuadros estáticos que vienen del <i>storyboard</i>, o tan complejos como unas secuencias de animación básicas de las acciones. Es por esto último, que en ocasiones el término animatic se acuña dentro del término “previsualización” (<i>previz</i>). No obstante, una <i>previz</i> se ha convertido en la siguiente etapa o evolución del <i>animatic</i>, agregando elementos y movimientos en 3D y brindando información técnica a todo el equipo de grabación. En particular, la <i>previz</i> es usada en proyectos live-action y producciones de alto presupuesto tales como las películas de Marvel o series de televisión como <i>Game of Thrones de HBO</i>. </p>
+                                <p>Los <i>animatic</i> simples toman directamente las viñetas del <i>storyboard</i> para digitalizarlos mediante un escáner o una fotografía. Más tarde, cada elemento gráfico se sincroniza con la maqueta de sonido. También es importante insinuar el movimiento de cámara y de los personajes dentro del encuadre.</p>
+                                <p>Por otra parte, los <i>animatic</i> más complejos pueden ser pensados como un <i>storyboard</i> que tiene piezas móviles (Simon, 2007). Se usan las ilustraciones de la viñeta y se le agregan pequeños sistemas de manipulación que permiten hacer animaciones sencillas, similares a la técnica <i>cut-out</i> del <i>stop-motion</i>. En otros casos, se pueden sumar más poses de los personajes con el fin de mostrar mayor fluidez, claridad de las acciones y expresiones que tendrán los personajes dentro de la escena. Lo mejor es ver algunos propuestos desde el material complementario.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mb-5"> <a href="https://youtu.be/LxmT-zQc1GQ " target="_blank" style="color:#12263F">
+                                    <div class="jumbotron bg-custom mb-0">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                            <div class="col">
+                                                <p class="mb-0"><strong>Ejemplo.</strong> <i>Animatic</i> con pocos dibujos - Arthur Gu (2011), <i>"Animatic"</i>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-auto mb-5"> <a href="https://vimeo.com/12153179" target="_blank" style="color:#12263F">
+                                    <div class="jumbotron bg-custom mb-0">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                            <div class="col">
+                                                <p class="mb-0"><strong>Ejemplo.</strong> <i>Animatic</i> muy fiel al producto final: Kevin Parry (2010), <i>The Arctic Circle - Storyboard Comparison</i>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-auto mb-5"> <a href="https://youtu.be/cG0DBZPRkTQ" target="_blank" style="color:#12263F">
+                                    <div class="jumbotron bg-custom mb-0">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                            <div class="col">
+                                                <p class="mb-0"><strong>Ejemplo.</strong> <i>Animatic</i> avanzado en 3D (<i>Previz</i>): <i>The Third Floor (2020), The making of Avengers: End Game.</i> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-12">
+                                <p>Una vez el <i>animatic</i> está terminado, se convierte en la visión de continuidad que dirigirá toda la producción de aquí en adelante (Doucet, 2020).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container" id="tema_2">
+                    <div class="header-ecored">
+                        <h1>2. Ritmo y montaje</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_2/img_2_01.jpg" alt=""></div>
+                            <div class="col-12">
+                                <p>El montaje o también conocido como edición, es el proceso mediante el cual se determina la duración y cortes de cada uno de los planos, de la misma manera se realiza la sincronización de sonidos para otorgar mayor sentido al audiovisual.</p>
+                                <p>Este es uno de los elementos más importantes ya que contribuye a la organización y el ritmo del filme, los cuales determinarán en gran medida la experiencia y efectos generados en los espectadores. Dentro del proceso, se juega con la tendencia del espectador a relacionar imágenes para construir significado. (Fernández y Martínez, 1999)</p>
+                                <p>Desde el lenguaje audiovisual reconocemos el concepto de ritmo como la sensación dinámica dada por el flujo de movimiento, sonoro y visual en los diferentes planos, así como también por efectos de montaje. Es así como se puede crear tensión o relajación a partir de la forma en cómo se articulan los diferentes elementos. Se habla de que un plano cinematográfico posee un ritmo interno y otro externo, que también puede entenderse como montaje interno y montaje externo.</p>
+                                <p>Para ampliar este concepto puede revisar el material complementario "El ritmo audiovisual. Ritmo interno y externo". </p>
+                            </div>
+                        </div>
+                        <div class="jumbotron img_texture">
+                            <div class="row justify-content-center">
+                                <div class="col-12 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_2/img_2_02.jpg" alt="" style="width:100%"></div>
+                                <div class="col-12">
+                                    <div class="jumbotron bg-white">
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>A</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <h3 class="mb-3">Montaje interno</h3>
+                                                <p>Es aquel que se realiza antes de la producción de cada plano sin recurrir a la edición. Puede obtenerse con o sin movimientos de cámara y efectos ópticos.</p>
+                                                <p>Al momento de optar por una cámara estática resulta importante denotar que la profundidad de campo, el enfoque, las acciones de los personajes, la composición y presencia fuera del campo, son los elementos a tener en cuenta para dotar a un plano de ritmo interno.</p>
+                                                <p>Adicionalmente, el movimiento de cámara y de óptica amplían las posibilidades. Un plano secuencia (sin cortes) permitirá relacionar dos o más imágenes, así como también un zoom proporcionará el aislamiento de un detalle o descubrir un entorno. (Fernández y Martínez, 1999)</p>
+                                                <p class="mb-0">Lo mejor es ver un ejemplo propuesto por Movieclips (2017) de la película “Atomic Blonde” en el material complementario. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="jumbotron img_texture">
+                            <div class="row justify-content-center">
+                                <div class="col-12 d-flex justify-content-center"><img class="img-fluid" src="assets/images/pages/tema_2/img_2_03.jpg" alt="" style="width:100%"></div>
+                                <div class="col-12">
+                                    <div class="jumbotron bg-white">
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>B</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <h3 class="mb-3">Montaje externo</h3>
+                                                <p>Recurre a la edición, recortando y organizando los diferentes planos de la producción de acuerdo a las necesidades narrativas y propósitos sugeridos por el director.</p>
+                                                <p>El montaje externo puede lograrse a partir de la continuidad o discontinuidad temporal y espacial, empleando elipsis para suprimir información que la narrativa no requiere o que más adelante se mostrará, rompiendo así la linealidad. </p>
+                                                <p class="mb-0">El montaje según la idea o contenido trata de construir significados simbólicos o ideológicos mediante el uso de diferentes planos cuya relación sugiere un significado para el espectador. (Fernández y Martínez, 1999)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema2_1">
+                                    <h2>2.1 Clasificación o métodos de montaje </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <p>Dado que la historia del montaje se encuentra unida a la evolución del lenguaje audiovisual, existen diferentes estilos, tendencias y comprensión de los espectadores, los cuales han ido cambiando los criterios para organizar y combinar de cierta manera cada uno de los fragmentos dentro de un filme (Fernández y Martínez, 1999). No existe como tal una única clasificación arbitraria dentro del montaje, así que se presentan algunas de las más importantes.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="list mb-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Efecto Kuleshov</h3>
+                                        <p class="mb-4">Este director soviético observó la facilidad con que los espectadores relacionaban campos dispares. Su experimento se basó en montar un primer plano estático y tranquilo del actor Mosjukin, seguido de un plato de sopa sobre una mesa; luego hacía la misma combinación, pero ahora seguido de un ataúd y por último una niña. Al presentar esto a un público no avisado, quedaron sorprendidos por la expresividad del actor en cada una de las situaciones. Lo único que se cambiaba era el fragmento que le seguía al primer plano del actor, y así se generaban sensaciones distintas.</p>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron mb-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto"><img src="assets/images/pages/tema_2/icon_2_01.svg" alt="" style="width:90px"></div>
+                                                        <div class="col">
+                                                            <p class="mb-0">Lo mejor es consultar el material complementario “Hitchcock explica el efecto Kuleshov”. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-divider my-5"></div>
+                            <div class="col-12">
+                                <div class="list mb-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3 class="mb-5">Clasificación sugerida por Pudovkin</h3>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>A</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje por contraste:</strong> se comparan dos situaciones contrarias: miseria vs. derroche, muerte vs. nacimiento.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>B</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje por paralelismo:</strong> presentación alternativa de dos tipos de sucesos diferentes.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>C</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje por similitud:</strong> relación simbólica entre dos tomas distintas. </p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>D</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje por sincronismo:</strong> similar al paralelismo, con la diferencia que los sucesos están relacionados y ocurren al mismo tiempo.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>E</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Leitmotiv:</strong> acentuación de una misma idea. También se le conoce como tema recurrente.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron mb-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto"><img src="assets/images/pages/tema_2/icon_2_01.svg" alt="" style="width:90px"></div>
+                                                        <div class="col">
+                                                            <p class="mb-0">Puede consultar el material complementario propuesto por Elder Tanaka sobre “Técnicas de montagem - Pudovkin”.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-divider my-5"></div>
+                            <div class="col-12">
+                                <div class="list mb-3">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3 class="mb-5">Clasificación sugerida por Eisenstein</h3>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>A</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje métrico:</strong> basado enteramente en la longitud de los fragmentos independiente de su contenido.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>B</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje rítmico/ continuo:</strong> la longitud de los fragmentos se establece en función del contenido de los fragmentos y la estructura de la secuencia. Se tiene una estrecha relación con el sonido. </p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>C</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje tonal:</strong> es un grado superior del montaje rítmico, donde intervienen, además del movimiento y el sonido, el carácter emocional de cada fragmento. </p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>D</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje armónico:</strong> resultado de la combinación y relación de conflicto de las 3 técnicas anteriores. </p>
+                                            </div>
+                                        </div>
+                                        <div class="list mb-3">
+                                            <div class="list__item">
+                                                <div class="list__item__bulletNumber"><span>D</span></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p><strong>Montaje intelectual:</strong> pretende estimular el intelecto del espectador, haciendo uso de las técnicas anteriores. Podría catalogarse en cierta medida como el efecto Kulechov.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="jumbotron mb-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto"><img src="assets/images/pages/tema_2/icon_2_01.svg" alt="" style="width:90px"></div>
+                                                        <div class="col">
+                                                            <p class="mb-0">Para tener mayor claridad de cada una de las técnicas de montaje sugeridas por Eisenstein basta con realizar una búsqueda en internet o revisar el material complementario de “La teoría del montaje en el cine de Eisenstein” y “Los montajes de Eisenstein-Escuela para Cineastas”.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container" id="tema_3">
+                    <div class="header-ecored">
+                        <h1>3. Maqueta de sonido</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/img_3_01.jpg" alt=""></div>
+                            <div class="col-12">
+                                <p>La maqueta de sonido es la exploración inicial del ensamble sonoro necesario para el audiovisual, en este punto se explora con música y otros sonidos en su mayoría pre existentes para para poder determinar en la práctica qué cosas pueden funcionar y que cosas no, de la misma manera sirve para establecer los tiempos exactos de cada acción ya que hay sonidos como los correspondientes a los diálogos que son necesarios para determinar aspectos de la animación.</p>
+                                <p class="mb-5">Aunque inicialmente se trata de una maqueta para determinar con exactitud qué aspectos sonoros deben ser diseñados y producidos, desde este punto es importante tener en cuenta 4 aspectos fundamentales que deben estar presentes en el diseño sonoro de cualquier producción los cuales se listan y describen a continuación.</p>
+                                <div class="row">
+                                    <div class="col-auto"> <a href="https://www.ted.com/talks/tasos_frantzolas_everything_you_hear_on_film_is_a_lie#t-318270" target="_blank" style="color:#12263F">
+                                            <div class="jumbotron bg-custom mb-0">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                                    <div class="col">
+                                                        <p class="mb-0"><strong>Ejemplo.</strong> Tasos Frantzolas, <i>Everything you hear on film is a lie</i> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema3_1">
+                                    <h2>3.1 Diálogos</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/img_3_1_01.jpg" alt=""></div>
+                            <div class="col-12">
+                                <p>Son una parte fundamental de todo el diseño sonoro de una producción pues como se mencionó anteriormente, estos definen diversos aspectos de la animación como el timing o los acentos en el acting del personaje esta importancia hace casi imprescindible que de entre todos los audios de una producción los diálogos estén terminados antes de empezar a animar puesto que si se anima con diálogos provisionales es seguro que se generan reprocesos cuando se graben las versiones finales y esto puede dañar el appeal de la animación sin contar los tiempos extra de trabajo. </p>
+                                <p class="mb-0">Este aspecto incluye tanto los parlamentos de los personajes como las voces en off que en ocasiones acompañan narrando mientras transcurre la acción.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema3_2">
+                                    <h2>3.2 Efectos</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/img_3_2_01.jpg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <p>En este aspecto podemos encontrar 2 grandes categorías, el sonido ambiente y los efectos especiales.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="list mb-4">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>1</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3 class="mb-3">Sonido ambiente o efectos de ambiente</h3>
+                                        <p class="mb-0">También conocido como room tone, corresponde a todos aquellos sonidos que nos permiten identificar un espacio; es decir el sonido característico de un lugar cuando se encuentra en “silencio”, por ejemplo, el sonido de los pájaros cantando en el bosque mientras el viento pasa entre las hojas de los árboles o el ruido producido por personas hablando en un café. Es importante no confundirlo con el concepto de ambiente, ya que este corresponde a la atmósfera sonora que se crea para un espacio específico mediante la composición y edición de música y otros sonidos que no existirían naturalmente en el lugar, pero que contribuyen a lo que se quiere transmitir con la escena. </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>2</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3 class="mb-3">Efectos especiales</h3>
+                                        <p>Son sonidos específicos que sirven para resaltar determinadas situaciones y que son necesarios recrear ya en un estudio diseñado para ello o en un espacio natural, no tienen correspondencia estricta con lo que se está mostrando, por ejemplo en <i>Transformers</i> cuando un robot se transforma hace sonidos mecánicos y electrónicos, los cuales tienen que ser generados de cero para tal fin o capturados de diversas fuentes para modificarlos y adaptarlos a las necesidades de la narración, ya que no existe forma de capturar esos sonidos de un <i>transformer</i> real.</p>
+                                        <p class="mb-0">De la misma manera el cine está plagado de estos efectos de los cuales no tenemos referencia real pero, percibimos como algo creíble como es el caso de los láseres en <i>Star Wars</i> o el rugido de los dinosaurios en <i>Jurassic Park</i>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema3_3">
+                                    <h2>3.3 <i>Foley</i></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/img_3_3_01.jpg" alt="" style="width:100%"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>El <i>foley</i> es la reconstrucción o creación en estudio de sonidos en sincronía con la imagen real, es una forma de crear efectos especiales, pero principalmente sirve para resaltar o acentuar los sonidos que acompañan una acción y para ello se hace uso de gran variedad de elementos en un ambiente controlado.</p>
+                                <p>Por ejemplo, puede existir una toma donde el sonido de los pasos es fundamental para lo que se desea narrar, pero el sonido capturado en el set no es suficientemente impactante por lo que es necesario crearlo en estudio para poder generar las sensaciones que se requieren.</p>
+                                <p class="mb-5">Para el caso de la animación es imprescindible, ya que todos los sonidos procedentes de interacciones físicas deben ser generados de alguna manera al no existir los personajes en el mundo real.</p>
+                                <div class="row">
+                                    <div class="col-auto"> <a href="https://www.greatbigstory.com/stories/foley-artists-that-s-amazing" target="_blank" style="color:#12263F">
+                                            <div class="jumbotron bg-custom mb-0">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                                    <div class="col">
+                                                        <p class="mb-0"><strong>Recurso.</strong> <i>Great big story, The Magical Realism of Foley Artists</i> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema3_4">
+                                    <h2>3.4 Música</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center mb-5"><img class="img-fluid" src="assets/images/pages/tema_3/img_3_4_01.jpg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <p>En este aspecto encontramos también 2 grandes categorías la música diegética y la música extra diegética o incidental.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="list mb-4">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>1</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3 class="mb-3">Música diegética</h3>
+                                        <p class="mb-0">Diégesis es una palabra derivada del griego y según la RAE hace referencia al desarrollo narrativo de los hechos en una obra literaria o cinematográfica, dicho esto, es el tipo de música es la que transcurre al interior del universo narrativo, es decir el emisor de esta música existe dentro de la historia, trátese de una radio, una rockola, una agrupación tocando en algún sitio o incluso el mismo personaje silbando o cantando. </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>2</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3 class="mb-3">Efectos especiales</h3>
+                                        <p>En su definición más sencilla se trata de música de acompañamiento, es decir se encarga de crear una atmósfera para el desarrollo de la acción y por tanto no existe al interior del universo narrativo y si fuese el caso el personaje no estaría en capacidad de escucharla. Habitualmente se compone para acompañar momentos específicos de la historia ya que debe estar pensada conforme a lo que se desea transmitir.</p>
+                                        <p class="mb-0">Uno de los ejemplos más claros y sencillos se da cuando en películas suena música agitada o cuando se desarrollan persecuciones o música de suspenso para anticipar que algo importante va a suceder.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-4">
+                <div class="container" id="tema_4">
+                    <div class="header-ecored">
+                        <h1>4. Proceso básico de animatic </h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-auto d-flex justify-content-center mb-5 mb-lg-0"><img src="assets/images/pages/tema_4/icon_4_01.svg" alt="" style="width:325px"></div>
+                            <div class="col">
+                                <p>En el siguiente video se expone el proceso básico para el montaje de los cuadros elaborados en el proceso de storyboard con la finalidad de elaborar una animatic.</p>
+                                <p class="mb-0">Para esto se utilizará el programa Blender el cual es un <i>software</i> libre que se puede obtener gratuitamente en la página <a href="http://www.blender.org" target="_blank">www.blender.org.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="card mb-0">
+                                    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/f5k6B6K8aA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card mb-0">
+                                    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Dsb2amh5DxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                                    <div class="card-body mt-0">
+                                        <p class="mb-0">Aunque su uso principalmente está enfocado en el 3D, posee un apartado dedicado a la edición de video básica, ideal para introducirse en el mundo del montaje.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <p>Por otro lado, se pone a disposición una serie de videos que presenta el software especializado StoryboardPro y el proceso que se debe seguir para la construcción de un animatic. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto"> <a href="https://youtu.be/IewO4FET2xg" target="_blank" style="color:#12263F">
+                                    <div class="jumbotron bg-custom mb-0">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                            <div class="col">
+                                                <p class="mb-0"><strong>Recurso.</strong> <i>Webinar - Learn How to Create Animatics in Storyboard Pro</i> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p><strong class="mr-2">Diégesis:</strong>en una obra literaria o cinematográfica, desarrollo narrativo de los hechos.</p>
+                        <hr>
+                        <p><strong class="mr-2"><i>Live-action</i>:</strong>producciones que involucran personajes o animales reales, en contraste con la animación y efectos generados por computadora.</p>
+                        <hr>
+                        <p><strong class="mr-2"><i>Maqueta de sonido</i>:</strong>es un recurso de audio utilizado dentro de la construcción del animatic, el cual contiene diálogos, música y en ocasiones efectos de sonido. En otras palabras, es el borrador del sonido que irá en el proyecto final. Entre mejor trabajada esté la maqueta, menor trabajo de ajustes se deberán hacer al final.</p>
+                        <hr>
+                        <p><strong class="mr-2"><i>Metadatos</i>:</strong>se refiere a aquellos datos que hablan de los datos, es decir, describen el contenido de los archivos o la información de los mismos. </p>
+                        <hr>
+                        <p><strong class="mr-2"><i>Vectorizar</i>:</strong>proceso en el cual se representan los contornos de un dibujo mediante un conjunto de curvas Bézier. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-center">Autor, (año del documento o material), Nombre del documento o material.</th>
+                                    <th class="text-center">Tipo de material ( Video, capítulo de libro, articulo, otro) </th>
+                                    <th class="text-center" style="width:150px">Enlace del Recurso o Archivo del documento o material</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Arthur Gu (2011), "Animatic".</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://vimeo.com/1948224" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Kevin Parry (2010), The Arctic Circle - Storyboard Comparison.</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://vimeo.com/12153179" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>The Third Floor (2020),The making of Avengers: End Game.</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://youtu.be/ghAPq5Y3NdQ" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gorillaz - Clint Eastwood (Animatic).</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://youtu.be/JPC0n_ml4kc" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gorillaz - Feel Good Inc (Animatic).</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://youtu.be/MRyPSOyC7_c" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ILERNA Online, (2020)- El ritmo audiovisual. Ritmo interno y externo.</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://youtu.be/WOR1SyXuRfk" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Movieclips, (2017) - Atomic Blonde - Savage Stairwell Fight Scene (5/10).</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://youtu.be/XarGS1AeEcE" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Wendy Apple, (2004) - The cutting edge, The magic of the movie editing.</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://vimeo.com/63959564" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>C Muñoz - Hitchcock explica el efecto Kuleshov.</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://youtu.be/Q1LmKtWAfOg" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Elder Tanaka - Técnicas de montagem - Pudovkin.</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://youtu.be/2h5iWMc_PA4" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Manuel Pérez Mora - La teoría del montaje en el cine de Eisenstein</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://youtu.be/ZVd5CBAKzCQ" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Filmadores - Los montajes de Eisenstein - Escuela para Cineastas.</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://youtu.be/JKHEGNSuLvE" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Tasos Frantzolas, Everything you hear on film is a lie.</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://www.ted.com/talks/tasos_frantzolas_everything_you_hear_on_film_is_a_lie#t-91161" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Great big story, The Magical Realism of Foley Artists.</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://www.greatbigstory.com/stories/foley-artists-that-s-amazing" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>WEBINAR - Learn How to Create Animatics in Storyboard Pro.</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://youtu.be/IewO4FET2xg" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>Centro Audiovisual Rosario - CAR, (s.f). Haciendo dibujitos en el fin del mundo, El libro de la Escuela para Animadores de Rosario. Rosario, Santa Fe. Argentina: Secretaría de Cultura y Educación. Municipalidad de Rosario.</p>
+                        <hr>
+                        <p>Doucet, Ron, (2020). Drawing &amp; Composition for visual storytelling.<a class="ml-2" href="http://www.floobynooby.com/comp1.html#anchor " target="_blank">http://www.floobynooby.com/comp1.html#anchor </a></p>
+                        <hr>
+                        <p>Fernández, F. y Martínez, J. (1999). Manual básico de lenguaje audiovisual y narrativa audiovisual. Barcelona, ESPAÑA: Paidós.</p>
+                        <hr>
+                        <p>Maldonado, M. (2018). Animatic – El Storyboard de Hoy. Blog Industria Animación.<a class="ml-2" href="https://www.industriaanimacion.com/2018/06/animatic-storyboard-de-hoy/" target="_blank">https://www.industriaanimacion.com/2018/06/animatic-storyboard-de-hoy/</a></p>
+                        <hr>
+                        <p>Simon, Mark (2007). Storyboard Motion in Art. Burlington, MA, EEUU: Focal Press.</p>
+                        <hr>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-picture-o fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Fotografías y vectores tomados de <a href="https://www.shutterstock.com/" target="_blank">https://www.shutterstock.com/</a> y <a href="https://www.freepik.es/" target="_blank">https://www.freepik.es/</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-creative-commons fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Licencia Creative Commons <br> <strong>CC BY-NC-SA</strong><br> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Ver licencia.</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzon </strong><br /> <span class="text-small">Líder del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander </span></p>
+                        <p class="footer-texto mb-2"><strong>John Alexander García</strong><br />
+                            <strong>Oscar Andrés Martin</strong><br /><span class="text-small">Experto temático<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Servicios y Gestión Empresarial </span><br><span class="text-small">Regional Antioquia</span></p>
+                        <p class="footer-texto mb-2"><strong>Oscar Absalón Guevara</strong><br /> <span class="text-small">Diseñador instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Gestión Industrial</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Andrés Felipe Velandia Espitia</strong><br /> <span class="text-small">Evaluador instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Diseño y Metrología</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Julieth Paola Vital López</strong><br /> <span class="text-small">Corrección de estilo<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro para la Industria de la Comunicación Gráfica</span><br><span class="text-small">Regional Distrito Capital </span></p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto"><strong>Leyson Fabián Castaño Pérez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto"> <strong>Adriana Rincón Avendaño</strong><br />
+                            <strong>Camilo Andrés Villamizar Lizcano</strong><br />
+                            <strong>Daniel Ricardo Mutis Gómez</strong><br>
+                            <strong>José Jaime Luis Tang Pinzón</strong><br />
+                            <strong>Lady Adriana Ariza Luque</strong><br />
+                            <strong>Maria Camila Ovalle Ospina</strong><br />
+                            <strong>Nelson Iván Vera Briceño</strong><br />
+                            <strong>Oleg Litvin</strong><br />
+                            <strong>Yazmin Rocio Figueroa Pacheco</strong><br />
+                            <strong>Yenny patricia Ulloa Villamizar</strong><br />
+                            <strong>Víctor Raúl Cárdenas Cáceres</strong><br /> <span class="text-small">Diseño web & producción audiovisual<br /></span></p>
+                        <p class="footer-texto"><strong>Daniel Ricardo Mutis Gómez</strong><br /> <span class="text-small">Desarrollo front-end<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander</span></p>
+                        <h4 class="footer-subtitulo-2 mt-5">
+                            <div class="fa fa-caret-right mr-2"></div>Gestores de repositorio
+                        </h4>
+                        <p class="footer-texto"><strong>Brayan Steven Pinto Díaz</strong><br />
+                            <strong>Edilson Laverde Molina</strong><br />
+                            <strong>Ricardo Alfonso González Vargas</strong><br /> <span class="text-small">Validación de recursos<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de comercio y servicios </span><br><span class="text-small">Regional Tolima</span></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>

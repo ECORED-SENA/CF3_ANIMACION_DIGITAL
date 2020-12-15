@@ -62,7 +62,7 @@
   },
   {
     "id": 4,
-    "icon": "fa fa-file-text",
+    "icon": "fa fa-play-circle",
     "slug": "proceso_animatic",
     "title": "4. Proceso básico de animatic",    
     "path": "pages/tema-4.html"    
